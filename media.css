@@ -1,0 +1,17 @@
+@media screen and (max-width: 800px){
+    .side-bar .widget:nth-child(3){
+        display: none;
+    }
+    .side-bar{
+        flex-shrink: unset;
+    }
+    .menu-item{
+        flex-direction: column;        
+    }
+    .menu-item .icon{
+        margin-right:0;
+    }
+    .widget__menu{
+        text-align: center;
+    }
+}
