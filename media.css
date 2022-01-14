@@ -1,4 +1,6 @@
 @media screen and (min-width: 800px) and (max-width: 1330px){
+    
+    /*SIDE BAR*/
     .side-bar .widget:nth-child(3){
         display: none;
     }
@@ -15,7 +17,31 @@
 }
 
 @media screen and (max-width: 800px){
+
+    /*SIDE BAR*/
     .side-bar{
         display: none;
     }
+}
+
+/*PPLAY LIST RESPONSIVENESS*/ 
+
+@media screen and (min-width: 1140.01px){
+    /*4 COLONNE*/
+    
+}
+
+@media screen and (max-width: 1140px) and (min-width: 890.01px){
+    /*3 COLONNE*/
+    
+}
+
+@media screen and (max-width: 890px) and (min-width: 510.01px){
+    /*2 COLONNE*/
+    
+}
+
+@media screen and (max-width: 510px){
+    /*2 COLONNE*/
+    
 }
