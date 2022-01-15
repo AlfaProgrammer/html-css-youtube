@@ -33,6 +33,10 @@ main{
 .side-bar{
   width: 240px;
   flex-shrink: 0;
+  /*Aggiunti*/
+  overflow-y: scroll;
+  /* position: fixed;
+  background-color: white; */
 }
 
 .widget{
@@ -68,17 +72,24 @@ main{
   padding-left: 13px;
   text-transform: uppercase;
   font-size: 14px;
+  /*Aggiunti*/
+  opacity: 50% ;
+  margin-bottom: 10px;
 }
 
 .menu-item .profile-image{
   display: block;
   border-radius: 50%;
   width: 24px;
+  height: 24px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .main-container{
   background-color: #f8f8f8;
   flex-grow: 1;
+  overflow: hidden; /*AGGIUNTO*/
 }
 
 .categories{
@@ -86,6 +97,8 @@ main{
   background-color: white;
   gap: 15px;
   padding: 15px 30px;
+  /* border: 5px solid salmon; */
+  overflow-x:scroll; /*AGGIUNTO*/
 }
 
 .categories li{
@@ -104,7 +117,12 @@ main{
 
 .play-list{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /*MODIFICATO da space-between a flex-start
+                                 altrimenti se i video erano 3 sulla stessa riga
+                                 lo spazio tra di loro era troppo grande
+                                 e rovina il layout*/
+  flex-wrap: wrap; /*Aggiunto*/
+  gap: 1%; /*AGGIUNTO*/
 }
 
 .play-list-item{
