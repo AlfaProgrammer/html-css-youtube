@@ -179,3 +179,17 @@ main{
   border-radius: 50%;
 }
 
+
+/*DA QUI IN GIU TUTTO E STATO AGGIUNTO*/
+.new-video-added:after{
+  content:"";
+  display: block;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: blue;
+  
+  /*Diverso da justify-content: space-between*/
+  margin-left: auto;
+}
+

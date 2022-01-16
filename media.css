@@ -1,12 +1,10 @@
 /*SCROLLBAR SETTINGS ONLY firefox SUPPORT*/
-*{
+.side-bar:hover, 
+.main-container, 
+.categories{
     scrollbar-color: grey transparent;
     scrollbar-width: thin;  
 }
-
-
-
-
 
 @media screen and (min-width: 800px) and (max-width: 1330px){
     
@@ -62,3 +60,4 @@
               
     }
 }
+
