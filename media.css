@@ -50,6 +50,19 @@
         display: none;
     }
 }
+@media screen and (max-width: 657px) {
+    input[type="search"]{
+        display: none;
+    }
+    .search{
+        flex-grow: unset;
+        margin-left: auto;
+    }
+    .search .icon{
+        height: 40px;
+    }
+    
+}
 
 @media screen and (max-width: 510px){
     /*1 COLONNE*/

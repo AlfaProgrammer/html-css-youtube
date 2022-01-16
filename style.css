@@ -21,7 +21,7 @@ body{
 header{
   padding-block: 10px;
   /* height: 20px; */
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgb(67, 76, 94);
   /*AGGIUNTO*/
   position: sticky;
   left: 0;
@@ -225,5 +225,28 @@ nav{
   font-family: 'Anton', sans-serif;
 }
 
+/*SEARCH BAR*/
+.search{
+  display: flex;
+  align-items: center;
+  background: wheat;
+  flex-grow: 1;
+  max-width: 600px;
+}
+input[type="search"]{
+  height: 40px;
+  /* flex-shrink: 1; */
+  background: whitesmoke;
+  margin: 1px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.search .icon{  
+  font-size: 25px;  
+  margin-inline: 15px;
+}
+.search .icon i{
+  line-height: 40px;
+}
 
 
