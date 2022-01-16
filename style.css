@@ -19,10 +19,9 @@ body{
 }
 
 header{
-  padding: 30px;
+  padding-block: 10px;
   /* height: 20px; */
   background-color: rgba(0,0,0, 0.5);
-
   /*AGGIUNTO*/
   position: sticky;
   left: 0;
@@ -33,7 +32,6 @@ header{
 
 main{
   display: flex;
-  border: 2px solid black;
   flex-grow: 1;
 
   /*AGGIUNTO*/
@@ -188,8 +186,44 @@ main{
   width: 5px;
   border-radius: 50%;
   background: blue;
-  
+
   /*Diverso da justify-content: space-between*/
   margin-left: auto;
 }
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items:center; 
+}
+.nav__menu{
+  padding-inline: 10px;
+  display: flex;
+  align-items: center;
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+.nav__menu .icon{
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 20px;  
+}
+.logo{
+  max-width: 40px;
+  display: inline-block;
+  object-fit: contain;
+  object-position: center;
+  margin-left:-5px;
+}
+.logo-text{
+  color: white;
+  display: inline-block;
+  font-size:25px;
+  font-family: 'Anton', sans-serif;
+}
+
+
 
