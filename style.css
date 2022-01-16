@@ -20,29 +20,45 @@ body{
 
 header{
   padding: 30px;
-  border: 2px solid red;
-  height: 20px;
+  /* height: 20px; */
+  background-color: rgba(0,0,0, 0.5);
+
+  /*AGGIUNTO*/
+  position: sticky;
+  left: 0;
+  right: 0;
+  top:0;
+
 }
 
 main{
   display: flex;
   border: 2px solid black;
   flex-grow: 1;
+
+  /*AGGIUNTO*/
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 60px; 
+  bottom: 0; 
+  overflow-y: hidden;
+ 
 }
 
 .side-bar{
   width: 240px;
   flex-shrink: 0;
-  /*Aggiunti*/
+}
+
+ /*AGGIUNTO*/
+.side-bar:hover{         
   overflow-y: scroll;
-  /* position: fixed;
-  background-color: white; */
 }
 
 .widget{
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .menu-item{
@@ -72,7 +88,8 @@ main{
   padding-left: 13px;
   text-transform: uppercase;
   font-size: 14px;
-  /*Aggiunti*/
+
+  /*AGGIUNTO*/
   opacity: 50% ;
   margin-bottom: 10px;
 }
@@ -89,7 +106,9 @@ main{
 .main-container{
   background-color: #f8f8f8;
   flex-grow: 1;
-  overflow: hidden; /*AGGIUNTO*/
+
+  /*AGGIUNTO*/
+  overflow-y: scroll;
 }
 
 .categories{
@@ -97,8 +116,14 @@ main{
   background-color: white;
   gap: 15px;
   padding: 15px 30px;
-  /* border: 5px solid salmon; */
-  overflow-x:scroll; /*AGGIUNTO*/
+
+  /* AGGIUNTO */
+  overflow-x:scroll; 
+  position: sticky;
+  left: 0;
+  top: 0; 
+  right: 0;
+  
 }
 
 .categories li{
@@ -121,12 +146,16 @@ main{
                                  altrimenti se i video erano 3 sulla stessa riga
                                  lo spazio tra di loro era troppo grande
                                  e rovina il layout*/
-  flex-wrap: wrap; /*Aggiunto*/
-  gap: 1%; /*AGGIUNTO*/
+  /*AGGIUNTO*/
+  flex-wrap: wrap; 
+  gap: 1%; 
 }
 
 .play-list-item{
   width: 24%;
+
+  /*AGGIUNTO*/
+  padding-bottom: 15px
 }
 
 .card-header{
@@ -149,3 +178,4 @@ main{
 .card-body img{
   border-radius: 50%;
 }
+
